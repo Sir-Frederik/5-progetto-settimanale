@@ -63,13 +63,28 @@ REGOLE
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-const dice = function {
-  let random
-}
+
+// const dice = function () {
+//   let random = Math.round(Math.random() * 6);
+//   return random;
+// };
+// console.log("Dietzsche:", dice()); // ho messo Dietzsche perchè si pronuncia "Dice", scimmiottando il nome del filosofo Nietzsche;
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
+
+// function whoIsBigger(a, b) {
+//   if (a > b) {
+//     return a;
+//   } else if (a < b) {
+//     return b;
+//   } else {
+//     return "i numeri sono uguali uguali";
+//   }
+// }
+// console.log(whoIsBigger(1, 2), whoIsBigger(2, 1), whoIsBigger(1, 1));
+//Questa volta ho preferito generare una funzione senza attribuirla ad una variabile, giusto per elasticità.
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
@@ -77,10 +92,35 @@ const dice = function {
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
+// function splitMe(x) {
+//   if (typeof x === "string") {
+//     return x.split(" ");
+//   } else {
+//     return "Secondo la famosa teoria, dovresti darmi una stringa.";
+//   }
+// }
+
+// console.log(splitMe("Ciao a tutti!"), splitMe(2));
+
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
+// const deleteOne = function (bool, str) {
+//   if (typeof bool === "boolean" && typeof str === "string") {
+//     if (bool === true) {
+//       const newStr = str.substring(1, str.lenght);
+//       return newStr;
+//     } else if (bool === false) {
+//       const newStr = str.substring(0, str.length - 1); //
+//       return newStr;
+//     }
+//   } else {
+//     return "Attenzione, forniscimi prima una variabile boolean, e poi una stringa";
+//   }
+// };
+
+// console.log(deleteOne(true, "Ciao"), deleteOne(false, "Ciao"), deleteOne("Saluti", "Ciao"));
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
