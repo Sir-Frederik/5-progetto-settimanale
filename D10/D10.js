@@ -127,6 +127,24 @@ REGOLE
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
+const onlyLetters = function (str) {
+  if (typeof str === "string") {
+    const array = str.split(" ");
+    console.log(array);
+    for (let i = 0; i <= array.length - 1; i++) {
+      console.log(array[i]);
+      if (isNaN(array[i]) === false) {
+        array.splice(i, 1);
+        console.log(array);
+      }
+    }
+    return (str = array.join(" "));
+  } else {
+    return "non hai fornito una stringa";
+  }
+};
+
+console.log(onlyLetters(" I love you, Do you love me? Yes, I love you 2 and i'll do that 4 ever"));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
