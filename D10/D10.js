@@ -127,32 +127,59 @@ REGOLE
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
-const onlyLetters = function (str) {
-  if (typeof str === "string") {
-    const array = str.split(" ");
-    console.log(array);
-    for (let i = 0; i <= array.length - 1; i++) {
-      console.log(array[i]);
-      if (isNaN(array[i]) === false) {
-        array.splice(i, 1);
-        console.log(array);
-      }
-    }
-    return (str = array.join(" "));
-  } else {
-    return "non hai fornito una stringa";
-  }
-};
+// const onlyLetters = function (str) {
+//   if (typeof str === "string") {
+//     const array = str.split(" ");
+//     console.log(array);
+//     for (let i = 0; i <= array.length - 1; i++) {
+//       console.log(array[i]);
+//       if (isNaN(array[i]) === false) {
+//         array.splice(i, 1);
+//         console.log(array);
+//       }
+//     }
+//     return (str = array.join(" "));
+//   } else {
+//     return "non hai fornito una stringa";
+//   }
+// };
 
-console.log(onlyLetters(" I love you, Do you love me? Yes, I love you 2 and i'll do that 4 ever"));
+// console.log(onlyLetters(" I love you, Do you love me? Yes, I love you 2 and i'll do that 4 ever"));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+// const isThisAnEmail = function (str) {
+//   if (typeof str === "string") {
+//     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+//     if (!emailRegex.test(str)) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   } else {
+//     return "Gimme a string!";
+//   }
+// };
+
+// console.log(isThisAnEmail("Abici@clientInformation.com"));
+
+// console.log(isThisAnEmail("ChiaramenteNonUnaMail"));
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+
+// const whatDayIsIt = function () {
+//   const date = new Date();
+//   console.log(date);
+//   const giorni = ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"];
+//   let giorno = giorni[date.getDay()];
+//   console.log(giorno);
+//   return giorno;
+// };
+// whatDayIsIt();
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
